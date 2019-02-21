@@ -33,5 +33,11 @@
         }
 
         #endregion
+
+        private void InitializeComponente()
+        {
+            this.ServiceName = "Serviço Teste";
+            
+        }
     }
 }

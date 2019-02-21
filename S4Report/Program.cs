@@ -20,6 +20,8 @@ namespace S4Report
                 new Service1()
             };
             ServiceBase.Run(ServicesToRun);
+            DataAccess data = new DataAccess();
+            data.ExecuteQuery("SELECT top 100 *  FROM HISTORIA_CLINICA_ATUAL_FCO");
         }
     }
 }

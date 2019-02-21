@@ -48,6 +48,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess.cs" />
     <Compile Include="ScriptRunner.cs" />
     <Compile Include="Service1.cs">
       <SubType>Component</SubType>
