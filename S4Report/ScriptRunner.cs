@@ -16,12 +16,13 @@ namespace S4Report
         {
             timer = new Timer(10000) { AutoReset = true };
             timer.Elapsed += TimerElapsed;
+            timer.Start();
         }
 
         private void TimerElapsed(object sender, ElapsedEventArgs e)
         {
             string[] lines = new string[] { DateTime.Now.ToString() };
-            File.AppendAllLines(@".\Output\output.txt", lines);
+            File.AppendAllLines(@"\\output.txt", lines);
         }
     }
 }
